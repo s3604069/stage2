@@ -1,6 +1,43 @@
 <% provide(:title, 'Contact') %>
-<h1>Contact</h1>
-<p>
-  Contact the Ruby on Rails Tutorial about the sample app at the
-  <a href="https://www.railstutorial.org/contact">contact page</a>.
-</p>
+      <h1>Contact Us</h1>
+      <form>
+        <div class="form-group">
+          <label for="nameBox">Name</label>
+          <input type="name" class="form-control" id="nameBox" aria-describedby="emailHelp" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+          <label for="emailBox">Email</label>
+          <input type="email" class="form-control" id="emailBox" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="textBox">Message</label>
+          <textarea class="form-control" id="textBox" rows="6"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    <ul>
+      <h3>Contact Details</h3> 
+      <li>Tel:0123456789</li>
+      <li>Fax:0123456</li>
+      <li>johnsmith@rmit.edu.au</li>
+    </ul>
+    <ul>
+      <h3>General Inquiries</h3>
+      <li>Andy Song</li>
+      <li>Julian Jiang</li>
+      <li>Ali</li>
+    </ul>
+    <ul>
+      <h3>Useful Links</h3>
+      <li><%= link_to "RMIT Course", about_path %></li>
+      <li><%= link_to "RMIT Helpdesk", about_path %></li>
+      <li><%= link_to "RMIT International", about_path %></li>
+    </ul>
+    <ul>
+      <h3>Media</h3>
+      <li><%= link_to "Youtube", about_path %></li>
+      <li><%= link_to "Twitter", about_path %></li>
+      <li><%= link_to "Facebook", about_path %></li>
+      <li><%= link_to "Instagram", about_path %></li>
+      <li><%= link_to "Skype", about_path %></li>
+    </ul>
